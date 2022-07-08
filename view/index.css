@@ -1,0 +1,142 @@
+.tab {
+	width: 100%;
+	height: 120px;
+	background-color: rgba(97, 136, 236, 0.414);
+	margin-top: 50px;
+}
+.tab-text {
+	position: absolute;
+	top: 13%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	color: whitesmoke;
+	font-family: DSN-LardPhrao;
+}
+h1 {
+	text-shadow: 3px 3px black;
+}
+body {
+	background: url("../Images/cba-image.jpeg") no-repeat center center fixed;
+}
+.input-box {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(255, 255, 255);
+	width: 400px;
+	height: 100px;
+	border-radius: 20px;
+}
+.input {
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	width: 230px;
+	height: 50px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	font-size: large;
+}
+.submit-btn {
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	height: 55px;
+	width: 100px;
+	border-radius: 10px;
+	background-color: rgba(97, 136, 236);
+	color: white;
+	font-size: 30px;
+	font-family: DSN-LardPhrao;
+}
+.submit-btn:hover {
+	background-color: rgb(36, 89, 222);
+}
+.showbox {
+	height: 400px;
+	width: 400px;
+	position: absolute;
+	top: 67%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(73, 142, 176, 0.414);
+	display: none;
+	border-radius: 10px;
+}
+.detail {
+	height: 450px;
+	width: 400px;
+	position: absolute;
+	top: 67%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	display: block;
+	border-radius: 10px;
+}
+
+.incorrect {
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	height: 175px;
+	border-radius: 20px;
+	position: absolute;
+	top: 5%;
+	font-family: DSN-LardPhrao;
+	display: none;
+	font-size: 40px;
+	text-align: center;
+}
+.incorrect-text {
+	margin-top: 5px;
+	padding: 0px;
+	margin-bottom: 5px;
+}
+.or-text {
+	margin-top: 25px;
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	color: rgb(255, 255, 255);
+	display: none;
+
+	z-index: 3;
+}
+.line-order {
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	height: 175px;
+	border-radius: 20px;
+	position: absolute;
+	top: 60%;
+	display: none;
+	font-size: 40px;
+	font-family: DSN-LardPhrao;
+	text-align: center;
+}
+.line-order-text {
+	margin-top: 10px;
+}
+@font-face {
+	font-family: DSN-LardPhrao;
+	src: url(../Fonts/DSN-LardPhrao-Regular.ttf);
+}
+.image {
+	animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
