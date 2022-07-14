@@ -28,7 +28,7 @@ submitBtn.addEventListener("click", () => {
 			found = true;
 			detailBox.insertAdjacentHTML(
 				"afterend",
-				` <img class ='image' id='image' src='../Images/${e.employee_nickname_thai}.png' height =400px width=400px>`
+				` <img class ='image' id='image' src='../Images/${e.employee_nickname_thai}_${e.employee_id}.png' height =400px width=400px>`
 			);
 		}
 	});
