@@ -11,25 +11,37 @@ let found = false;
 let name = "";
 
 submitBtn.addEventListener("click", () => {
+	submit();
+});
+
+input.addEventListener("keypress", (event) => {
+	if (event.key === "Enter") {
+		event.preventDefault();
+		submit();
+	}
+});
+function submit() {
 	if (document.getElementById("image")) {
 		document.getElementById("image").remove();
 	}
 
 	SPData.forEach((e) => {
 		if (e.employee_id == input.value) {
+			console.log(`${e.employee_nickname_thai}_${e.employee_id}.png`);
+
 			showbox.style.display = "block";
 			incorrectBlock.style.display = "none";
 			lineOrderBlock.style.display = "none";
 			orText.style.display = "none";
 			showbox.style.display = "block";
 			detailBox.style.display = "block";
-			console.log(e.employee_name_thai);
 			name = e.employee_nickname_thai;
 			found = true;
 			detailBox.insertAdjacentHTML(
 				"afterend",
-				` <img class ='image' id='image' src='../Images/${e.employee_nickname_thai}_${e.employee_id}.png' height =400px width=400px>`
+				` <img class ='image' id='image' src='../Images/${e.employee_nickname_thai}_${e.employee_id}.png' height =450px width=450px>`
 			);
+			if (found) return;
 		}
 	});
 	if (!found) {
@@ -40,4 +52,4 @@ submitBtn.addEventListener("click", () => {
 		orText.style.display = "block";
 	}
 	found = false;
-});
+}

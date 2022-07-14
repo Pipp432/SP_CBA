@@ -14,7 +14,7 @@
             </div>  
         </div>
         <div class="input-box">
-            <input type="text" class="input" id="input"> 
+            <input type="text" class="input" id="input" placeholder="Enter SP ID"> 
             <button class="submit-btn" id="submit-btn">Enter</button>
         </div>
       
