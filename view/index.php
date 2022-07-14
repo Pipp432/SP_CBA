@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="index.css" type="text/css">
+    <title> SP Checker by IS005 </title>
     <head>
 
     </head>
     <body>
+   
         <div class="tab">
             <div class="tab-text">
                 <h1>SP-ID Checking</h1>
+              
             </div>  
         </div>
         <div class="input-box">
             <input type="text" class="input" id="input"> 
             <button class="submit-btn" id="submit-btn">Enter</button>
         </div>
+      
+
+
         <div class='showbox' id="showbox">
 
             <div class='detail' id='detailbox'>
-               
+            
                 
             </div>
            
@@ -32,10 +38,13 @@
                     <h2 class= 'line-order-text'style="color:black;">Order with line: @cbaonline</h2>
 
                 </div>
+               
             
 
 
         </div>
+        
+           
 
     </body>
 </html>
